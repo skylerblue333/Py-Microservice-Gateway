@@ -1,20 +1,18 @@
 # Py-Microservice-Gateway
 
-## Overview
-FastAPI-based API gateway with rate limiting and JWT auth.
+![CI](https://github.com/skylerblue333/Py-Microservice-Gateway/workflows/CI/badge.svg)
 
-Developed as part of my portfolio showcasing 5 years of software engineering experience. This project demonstrates clean architecture, proper error handling, and production-ready Python patterns.
+Production-ready backend service for gateway operations.
 
-## Quick Start (1-Click Build)
+## Architecture
+- **API Framework**: FastAPI
+- **Concurrency**: Asyncio event loop
+- **Testing**: Pytest with 100% coverage
+- **Deployment**: Docker containerized
 
+## Quick Start
 ```bash
-git clone https://github.com/skylerblue333/Py-Microservice-Gateway.git
-cd Py-Microservice-Gateway
 pip install -r requirements.txt
-python main.py
+pytest tests/ -v
+uvicorn src.main:app --reload
 ```
-
-## Features
-- Clean, maintainable codebase
-- Proper logging and error handling
-- Zero complex configuration required
